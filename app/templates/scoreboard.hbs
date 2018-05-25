@@ -1,0 +1,19 @@
+<div class=" jumbotron text-center">
+  <h1>Scoreboard</h1>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Username</th>
+        <th scope="col">Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each sortedScores as |user|}}
+        <tr>
+          <td scope="row">{{user.username}}</td>
+          <td>{{user.score}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

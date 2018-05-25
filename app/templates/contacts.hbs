@@ -1,0 +1,27 @@
+
+<div class=" jumbotron text-center">
+  <h1>Review Us</h1>
+<div class="form-horizontal form-group form-group-lg row">
+  <div class=" col-xs-10  col-sm-offset-1 text-left">
+    <div class="name-email-div">
+      <div class="form-group">
+        <label for="name">Name:</label>
+            {{input id="name" type="name" name="name" value=name class="form-control" placeholder="Please type your name." autofocus="autofocus"}}
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+          {{input id="email" type="email" name="email" value=emailAddress class="form-control" placeholder="Please type your email address." autofocus="autofocus"}}
+        </div>
+      </div>
+      <div class="msg-div">
+        <div class="form-group">
+          <label for="text-area">Message:</label>
+          {{textarea id="message" name="text-area" class="form-control" placeholder="Tell us how awesome we are!" rows="7" value=message }}
+          <div class="msg-btn">
+            <button {{action 'contactMessage'}} disabled= {{isDisabled}} class="btn btn-primary btn-block">Send message</button>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+</div>
